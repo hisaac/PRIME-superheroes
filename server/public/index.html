@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="desk">
   <head>
     <meta charset="utf-8">
     <title>Department of Emerging Superhero Knowledge</title>
@@ -9,6 +9,8 @@
     <script type="text/javascript" src="../js/client.js"></script>
   </head>
   <body>
-    <h1>Department of Emerging Superhero Knowledge</h1>
+    <h1>Department of Emerging Superhero Knowledge (DESK)</h1>
+    <nav ng-include="'/views/templates/nav.html'"></nav>
+    <main ng-view></main>
   </body>
 </html>

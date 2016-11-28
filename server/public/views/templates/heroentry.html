@@ -1,0 +1,28 @@
+<form>
+  <div class="form-group">
+    <label for="persona">Persona</label>
+    <input type="text" name="persona" ng-model="heroentry.newHero.persona" />
+  </div>
+
+  <div class="form-group">
+    <label for="alias">Alias</label>
+    <input type="text" name="alias" required ng-model="heroentry.newHero.alias" />
+  </div>
+
+  <!-- <div class="form-group">
+    <label for="superpower">Superpower</label>
+    <select name="superpower" ng-model="heroentry.newHero.power_id" ng-options="heroentry.powers.name for name in powers"></select>
+  </div> -->
+
+  <div class="form-group">
+    <label for="superpower">Superpower</label>
+    <select name="superpower" ng-model="heroentry.newHero.superpower">
+      <option></option>
+      <option ng-repeat="power in heroentry.powers">{{ power.id }}</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <input class="btn btn-primary" type="submit" ng-click="heroentry.submitNewHero()"/>
+  </div>
+</form>

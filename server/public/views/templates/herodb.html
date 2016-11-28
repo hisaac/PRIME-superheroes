@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+    <th>Persona</th>
+    <th>Alias</th>
+    <th>Superpower</th>
+    <th></th>
+  </thead>
+  <tbody>
+    <tr ng-repeat="hero in herodb.heroes">
+      <td>{{ hero.persona }}</td>
+      <td>{{ hero.alias }}</td>
+      <td>{{ hero.name }}</td>
+      <td><button class="btn btn-danger">Delete</button></td>
+    </tr>
+  </tbody>
+</table>

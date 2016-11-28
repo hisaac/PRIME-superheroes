@@ -12,7 +12,7 @@ router.get('/', function (req, res) {
   console.log('getting powers');
   pool.connect()
     .then(function (client) {
-      client.query('SELECT * FROM super_powers ORDER BY name ASC')
+      client.query('SELECT * FROM super_powers ORDER BY id ASC')
         .then(function (result) {
           client.release();
           res.send(result.rows);
@@ -21,7 +21,7 @@ router.get('/', function (req, res) {
           console.log('error on SELECT', err);
           res.sendStatus(500);
         });
-    });    
+    });
 });
 
 
