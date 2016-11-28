@@ -20,7 +20,11 @@ app.config(['$routeProvider', function($routeProvider){
 //----------------------------------------------------------------------------//
 
 //--------------------------------CONTROLLERS---------------------------------//
+app.controller('HeroController', ['$http', function($http){
 
+}]);
 
-
+app.controller('HeroDb', ['$http', function($http){
+  
+}]);
 //----------------------------------------------------------------------------//
