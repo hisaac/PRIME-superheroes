@@ -1,5 +1,9 @@
 # Angular Solo Code Challenge
 
+This assignement covers the full-stack, using Angular and AJAX requests on the front end, and Node/Express routing to a PostgreSQL database on the back end.
+
+---
+
 Fork, clone, and run `npm install` to get started.
 
 ## Dependencies included in package.json
